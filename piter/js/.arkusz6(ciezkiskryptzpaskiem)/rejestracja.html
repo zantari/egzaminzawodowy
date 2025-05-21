@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep - rejestracja</title>
+    <link rel="stylesheet" href="styl.css">
+    
+</head>
+<body>
+    <section id="boczny">
+        <img src="obraz.png" alt="promocje">
+        <h2>Sprawdz promocje</h2>
+        <table>
+            <tr>
+                <th>co?</th>
+                <th>ile taniej?</th>
+
+            
+            
+            </tr>
+
+            <tr>
+                <td>ubrania</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>buty</td>
+                <td>25%</td>
+            </tr>
+        </table>
+    </section>
+
+    <header>
+        <h1>Zarejestruj się w sklepie</h1>
+
+    </header>
+
+    <section id="glowny">
+        <button onclick="pierwszy()">Klient</button>
+        <button onclick="drugi()">Adres</button>
+        <button onclick="trzeci()">Kontakt</button>
+
+        <section id="kontrolki">
+            <p>Imię</p> 
+            <input type="text" placeholder="Wpisz dane..." id="imie" onfocusout="pasek()">
+
+            <p>Nazwisko</p> 
+            <input type="text" id="nazwisko" onfocusout="pasek()">
+
+            <p>Data urodzenia</p>
+            <input type="date" id="data" onfocusout="pasek()">
+        </section>
+        <section id="kontrolki2">
+            <p>Ulica: </p>
+            <input type="text" name="ulica" id="ulica" onfocusout="pasek()">
+            <p>Numer</p>
+            <input type="number" name="numer" id="numer" onfocusout="pasek()">
+            <p>Miasto</p>
+            <input type="text" name="miasto" id="miasto" onfocusout="pasek()">
+
+        </section>
+        <section id="kontrolki3">
+            <p>Numer komórkowy</p>
+            <input type="tel" name="telefon" id="telefon" onfocusout="pasek()">
+            <br>
+            <input type="checkbox" name="rodo" id="rodo" onfocusout="pasek()"> Akceptuje RODO
+            <br>
+            <button type="submit" onclick="zatwierdz()">Akceptuje dane</button>
+        </section>
+
+    </section>
+
+    <section id="postep">
+        <section id="pusty"></section>
+    </section>
+
+    <footer>
+        <h4>Rejestrację do sklepu wykonał: piotrek</h4>
+    </footer>
+    <script src="skrypt.js"></script>
+
+
+    
+</body>
+</html>
+

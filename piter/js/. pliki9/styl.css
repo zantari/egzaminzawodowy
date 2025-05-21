@@ -1,0 +1,87 @@
+*{
+    font-family: Georgia;
+    color: white;
+    box-sizing: border-box;
+}
+
+
+
+header, footer{
+    background-color: maroon;
+    text-align: center;
+    padding: 2px;
+}
+
+
+
+#lewy, #srodkowy, #prawy{
+    background-color: lightsalmon;
+    height: 527px;
+    float: left;
+}
+
+#lewy, #prawy{
+    width: 15%;
+    
+}
+
+
+#srodkowy{
+    width: 70%;
+}
+
+#miniatury{
+    background-color: maroon;
+    height: 70px;
+    width: 100%;
+    float: left;
+}
+
+
+
+button{
+    background-color: lightsalmon;
+    color: maroon;
+    border: none;
+    font-size: 400%;
+    display: block;
+    margin: auto;
+    padding-top: 210px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+@keyframes animacja {
+    from{
+        padding-left: 50px;
+    }
+    to{
+        padding-left: 0px;
+    }
+}
+
+#miniatury img{
+    height: 70px;
+    animation: animacja 4s;
+}
+
+#srodkowy img{
+    display: block;
+    margin: auto;
+    padding-top: 45px;
+}
+
+@keyframes animacjaButton{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+
+#srodkowy img:hover
+{
+    animation: animacjaButton 5s ease;
+}

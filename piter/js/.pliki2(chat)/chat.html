@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="skrypt.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Chat</h2>
+    </header>
+
+    
+
+    <section class="boczny">
+        <h3>Chaty</h3>
+
+        <ul>
+            <li>Ogólny</li>
+            <li>Tematyczne</li>
+            <ol>
+                <li>Turystyczny</li>
+                <li>Zelgarski</li>
+                <li>filatelistyczny</li>
+                <li>hodowla zwierzatek domowych</li>
+            </ol>
+
+
+        </ul>
+        <h3>Uczestnicy</h3>
+        <p>Jolanta Nowak</p>
+        <img src="Jolka.jpg" alt="jolka">
+        <p>Krzysztof Lukasinski</p>
+        <img src="Krzysiek.jpg" alt="Krzychu">
+        
+    </section>
+
+
+    <section class="glowny">
+        <section class="chat" id="chat">
+            <section class="jolanta" id="jolanta">
+                <img src="Jolka.jpg" alt="" id="zdjJola">
+                <p>Czesc idziesz jutro do kina?</p>
+            </section>
+
+            <section class="krzysztof">
+                <img src="Krzysiek.jpg" alt="">
+                <p>Tak! A ty?</p>
+
+            </section>
+
+        </section>
+        <label for="wypowiedzi">Wpisz wiadomosc:</label> <input type="text" name="" id="twojaWiadomosc" class=""> <button onclick="wyslij()">wyslij</button>
+        
+        <br>
+        <button onclick="generuj()">Generuj losową odpowiedź</button>
+    </section>
+
+
+    <footer><h5>Chat wykonal PIOTREK</h5></footer>
+</body>
+</html>
