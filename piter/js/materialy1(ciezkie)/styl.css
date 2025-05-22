@@ -1,0 +1,52 @@
+html{
+    background-color: #EEEEEE;
+    color: helvetica;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+#logo, #menu{
+    background-color: lightblue;
+    height: 100px;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+}
+
+#baner{
+    background-color: #DDDDDD;
+    height: 100%;
+}
+#glowny{
+    color: navy;
+    margin: 50px;
+    height: 400px;
+}
+
+#stopka{
+    text-align: right;
+    background-color: lightblue;
+    padding: 10px;
+
+}
+
+button{
+    background-color: lightblue;
+    color: navy;
+}
+
+#menu a{
+    color: navy;
+    size: 150%;
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+}
+
+#menu a:hover{
+    border: 1px solid navy;
+}
