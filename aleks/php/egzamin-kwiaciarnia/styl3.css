@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: Georgia;
+}
+
+header, footer{
+    background-color: #C75B39;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+#lewy{
+    background-color: #FF8A65;
+    width: 25%;
+    height: 500px;
+    padding-top: 50px;
+    float: left;
+}
+
+#prawy{
+    background-color: snow;
+    width: 75%;
+    height: 500px;
+    text-align: center;
+    padding-top: 50px;
+    float: right;
+}
+
+img{
+    width: 25%;
+    margin: 10px;
+    box-shadow: 15px 15px 10px dimgray;
+}
+
+li{
+    padding: 5px;
+    
+}
+
+ul li::marker,
+ol li::marker {
+  color: snow;
+}
+h3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+}

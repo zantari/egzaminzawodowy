@@ -1,0 +1,53 @@
+body{
+    font-family: Helvetica;
+    margin: 0;
+    background-color: lightsalmon;
+    text-align: center;
+}
+
+#lewy_gorny{
+    width: 30%;
+    height: 400px;
+    float: left;
+}
+
+#lewy_dolny{
+    background-color: darksalmon;
+    width: 30%;
+    height: 100px;
+    float: left;
+}
+
+#prawy{
+    background-color: darksalmon;
+    width: 70%;
+    height: 500px;
+    overflow: auto;
+    float: right;
+}
+
+img{
+    width: 100%;
+}
+
+#p_skrypt{
+    font-style: italic;
+    font-size: 200%;
+    padding: 10px;
+}
+
+#p_skrypt:hover{
+    color: ghostwhite;
+
+}
+
+table, td{
+    border: 1px dotted maroon;
+}
+
+table{
+    width: 70%;
+    margin: auto;
+    
+
+}

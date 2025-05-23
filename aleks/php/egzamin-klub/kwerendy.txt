@@ -1,0 +1,4 @@
+SELECT pasmo, nazwa_gory, wysokosc FROM gory ORDER BY wysokosc DESC LIMIT 10;
+SELECT nazwisko, imie, funkcja FROM osoby;
+INSERT INTO osiagniecia (id_osiagniecia, gora_id, osoba_id, data_zdobycia) VALUES 
+("AUTO_INCREMENT",182,4,"2024-06-08");

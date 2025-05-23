@@ -1,0 +1,78 @@
+body{
+    font-family: serif;
+}
+
+header{
+    background-color: darkcyan;
+    color: white;
+    width: 50%;
+    height: 100px;
+    line-height: 15px;
+    float: left;
+}
+
+footer{
+    background-color: darkcyan;
+    color: whitesmoke;
+    clear: both;
+}
+
+#glowny, #karta1, #karta2, #karta3{
+    background-color: azure;
+    width: 30%;
+    margin: 1%;
+    box-shadow: 4px 4px 8px dimgray;
+    display: inline;
+}
+
+#karta1{
+    float: left;
+}
+
+#karta2{
+    float: left;
+}
+
+#karta3{
+    float: left;
+}
+#kp{
+    width: 100%;
+}
+
+p, h2, h3{
+    margin: 15px;
+}
+
+a{
+    color: white;
+}
+
+h5{
+    background-color: teal;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+h5:hover{
+    background-color: lightseagreen;
+}
+
+blockquote{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-style: italic;
+    float: left;
+}
+
+blockquote:nth-of-type(2),
+blockquote:nth-of-type(3) {
+  display: none;
+}

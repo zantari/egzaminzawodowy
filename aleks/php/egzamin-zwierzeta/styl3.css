@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    font-family: Garamond;
+}
+
+header{
+    background-color: rosybrown;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#formularz{
+    background-color: darksalmon;
+    text-align: center;
+    padding: 40px;
+}
+
+#prawy, #lewy{
+    background-color: lightsalmon;
+    height: 300px;
+    width: 30%;
+}
+
+#srodkowy{
+    background-color: lightsalmon;
+    height: 300px;
+    width: 70%;
+}
+#prawy{
+    float: right;
+}
+
+#lewy{
+    float: left;
+}
+
+footer{
+    background-color: rosybrown;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+ol{
+    border: 2px solid rgb(205, 92, 92);
+    font-size: 150%;
+}
+
+h2{
+    margin:0;
+    padding:0;
+}
