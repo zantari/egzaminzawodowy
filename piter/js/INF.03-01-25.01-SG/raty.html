@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursy komputerowe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="naglowkowy">
+        <img src="baner.png" alt="kursy komputerowe">
+
+    </header>
+
+    <nav id="menu">
+        <a href="index.html">Strona glowna</a>
+        <a href="raty.html">Koszt rat</a>
+        <a href="https://moje-szkolenia.pl/">Nasz partner</a>
+
+    </nav>
+
+    <main id="glowny">
+        <h3>Oblicz miesięczną ratę</h3>
+        <label for="Kurs React">
+            <input type="checkbox" name="reactkurs" id="reactkurs" class="kontrolki"> Kurs React
+        </label>
+
+        <br>
+
+        <label for="Kurs JavaScript">
+            <input type="checkbox" name="jskurs" id="jskurs" class="kontrolki"> Kurs JavaScript
+        </label>
+
+        <br>
+
+        <label for="Liczba rat">
+            Liczba rat: <input type="number" name="raty" id="raty" class="kontrolki">
+        </label>
+
+        <br>
+
+        <select name="dane" id="dane" class="kontrolki">
+            <option value="Warszawa">Warszawa</option>
+            <option value="Katowice">Katowice</option>
+            <option value="Gdansk">Gdansk</option>
+        </select>
+
+        <br>
+
+        <button type="button" id="oblicz" class="kontrolki">Oblicz</button>
+
+        <p id="wynik"></p>
+
+    </main>
+
+    <footer id="stopka">
+        <p>Autor strony: piotrek</p>
+
+    </footer>
+
+    <script>
+        const obliczButton = document.getElementById("oblicz");
+
+        obliczButton.addEventListener("click", (e) => {
+            const kursReact = document.getElementById("reactkurs");
+            const kursJs = document.getElementById("jskurs");
+            const wynik = document.getElementById("wynik");
+            const miasto = document.getElementById("dane");
+
+
+            wynik.innerText = "";
+
+            const kursJsCena = 3000;
+            const kursReactCena = 5000;
+
+
+
+            let liczbaRat = Number(document.getElementById("raty").value);
+
+            let kosztCalkowity = 0;
+            if (kursReact.checked || kursJs.checked) {
+                if (kursReact.checked && kursJs.checked) {
+                    kosztCalkowity = kursJsCena + kursReactCena;
+                }
+                else if (kursJs.checked) {
+                    kosztCalkowity = kursJsCena;
+                }
+                else if (kursReact.checked) {
+                    kosztCalkowity = kursReactCena;
+                }
+                
+                let rata = Math.floor(kosztCalkowity/liczbaRat);
+                
+                if(rata == Infinity){
+                    rata = kosztCalkowity;
+                    liczbaRat = 1;
+                }
+
+                wynik.innerText = "Kurs odbedzie sie w "+ miasto.value + ". Kosz calkowity: " + kosztCalkowity + "zl. Placisz " + liczbaRat + " rat po " + rata + "zl.";
+            }
+
+            else {
+                wynik.innerText = "prosze zaznaczyc kurs.";
+            }
+
+
+        })
+    </script>
+
+</body>
+
+</html>
