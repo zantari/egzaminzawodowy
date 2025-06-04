@@ -1,0 +1,4 @@
+1. SELECT `pseudonim`, `tytul`, `ranking`, `klasa` FROM zawodnicy WHERE ranking>2787 ORDER BY ranking desc
+2. SELECT `pseudonim`, `ranking` FROM zawodnicy ORDER BY rand() limit 2;
+3. UPDATE `zawodnicy` SET `klasa`="5A" WHERE klasa = "4A";
+4. SELECT `pseudonim`, `data_zdobycia`, DATEDIFF(CURRENT_DATE(), `data_zdobycia`) AS Dni FROM zawodnicy WHERE tytul IS NOT NULL
