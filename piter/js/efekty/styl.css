@@ -1,0 +1,46 @@
+*{
+    font-family: Century, Serif;
+    text-align: center;
+}
+
+.baner, .stopka{
+    background-color: indigo;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    clear: both;
+}
+
+.blok{
+    width: 50%;
+    height: 470px;
+    float: left;
+}
+
+img{
+    padding: 3px;
+    margin: 10px;
+    border: 2px slateblue dashed ;
+}
+a{
+    color: white;
+}
+
+button{
+    background-color: slateblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: indigo;
+}
+
+input[type="range"]{
+    width: 80%;
+}
+
+body{
+    margin: 0;
+}

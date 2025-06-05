@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efekty obrazu</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+    <header class="baner">
+        <h2>Efekty na obrazach</h2>
+
+    </header>
+
+    <main>
+    <section class="blok" id="blok1">
+        <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku" id="pszczola">
+        <br>
+        
+        <label for="pszczola">
+        Blur<input type="radio" name="1" id="blur"> <br>
+        Sepia<input type="radio" name="1" id="sepia"><br>
+        Negatyw<input type="radio" name="1" id="negatyw"><br>
+        </label>
+
+        <button onclick="obraz1transform()">Zastosuj</button>
+    </section>
+
+    <section class="blok" id="blok2">
+        <img src="pomarancza.jpg" alt="drzewo pomarańczy" id="pomarancza">
+        <br>
+        <button onclick="kolorowy()">Kolorowy</button>
+        <button onclick="czarnybialy()">Czarno-biały</button>
+
+    </section>
+    <section class="blok" id="blok3">
+        <img src="owoce.jpg" alt="Kosz pelen owocow" id="owoce">
+        <input type="range" name="" id="owocrange" min="0" max="100" value="100">
+        <br>
+        <button onclick="obraz3transform()">Zastosuj</button>
+    </section>
+    <section class="blok" id="blok4">
+        <img src="zolw.jpg" alt="zolw w wodzie" id="zolw">
+        <input type="range" name="zolwrange" id="zolwrange" min="0" max="250"><br>
+        <button onclick="obraz4transform()">Zastosuj</button>
+
+    </section>
+    </main>
+
+    <footer class="stopka">
+        <p><a href="http://www.css.com/" target="_blank" rel="noopener noreferrer">Zobacz inne efektyobrazu</a></p>
+        <p>strone wykonal pitor</p>
+    </footer>
+    
+
+    <script>
+        const obraz1 = document.getElementById('pszczola');
+        const obraz2 = document.getElementById('pomarancza');
+        const obraz3 = document.getElementById('owoce');
+        const obraz4 = document.getElementById('zolw');
+
+        function obraz1transform(){
+            const blur = document.getElementById('blur')
+            const sepia = document.getElementById('sepia')
+            const negatyw = document.getElementById('negatyw')
+
+            
+
+            if(blur.checked){
+                obraz1.style.filter = 'blur(8px)';
+                
+            }
+
+            if(sepia.checked){
+                obraz1.style.filter = 'sepia(100%)'
+            }
+
+            if(negatyw.checked){
+                obraz1.style.filter = 'invert(100%)';
+            }
+
+        }
+
+
+        function kolorowy(){
+            obraz2.style.filter = 'grayscale(0%)';
+
+        }
+
+        function czarnybialy(){
+            obraz2.style.filter = 'grayscale(100%)';
+        }
+
+
+        function obraz3transform(){
+            const range = document.getElementById("owocrange").value;
+            obraz3.style.filter = `opacity(${range}%)`
+
+        }
+
+
+        function obraz4transform(){
+            const range = document.getElementById("zolwrange").value;
+            obraz4.style.filter = `brightness(${range}%)`
+
+        }
+    </script>
+</body>
+</html>
