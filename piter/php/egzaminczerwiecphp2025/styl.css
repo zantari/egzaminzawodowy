@@ -1,0 +1,92 @@
+*{
+    font-family: Garamond;
+    color: white;
+}
+
+body{
+    margin: 0;
+}
+
+.naglowkowa{
+    background-color: Indigo;
+    text-align: center;
+    padding: 2px;
+}
+
+.lewa, .prawa{
+    background-color: Indigo;
+    height: 600px;
+}
+.srodkowa{
+    background-color: black;
+    height: 600px;
+    overflow: auto;
+}
+
+.srodkowa img{
+    width: 120%;
+    height: 60%;
+}
+
+@media(min-width: 800px) {
+    .lewa{
+        width: 20%;
+        float: left;
+    }
+    .prawa{
+        width: 20%;
+        float: left;
+
+    }
+    .srodkowa{
+        width: 60%;
+        float: left;
+    }
+    
+}
+
+
+/* @media(max-width: 799){
+    .lewa{
+    }
+    .srodkowa{
+
+    }
+    .prawa{
+    }
+} */
+
+.stopka{
+    background-color: Indigo;
+    height: 150px;
+    z-index: 111;
+    clear: both;
+}
+
+.punktyOznaczenie{
+    background-color: tomato;
+    border-radius: 50%;
+    padding: 5px;
+
+}
+
+li{
+    padding: 5px;
+}
+
+.blokGier{
+    float: left;
+    text-align: center;
+    padding: 3px;
+    width: 40%;
+    height: 60%;
+}
+
+input{
+    margin: 10px;
+    color: Indigo;
+}
+
+button{
+    color: black;
+}

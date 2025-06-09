@@ -1,0 +1,7 @@
+1. SELECT`id`, `nazwa`, `zdjecie` FROM gry;
+
+2. SELECT `nazwa`, LEFT(opis, 100) AS OPIS , punkty, cena FROM gry WHERE id = 1;
+
+3. SELECT `nazwa`, `punkty` FROM gry ORDER BY punkty desc Limit 5;
+
+4. INSERT INTO `gry`( `nazwa`, `opis`, `punkty`, `cena`, `zdjecie`) VALUES ('[value-2]','[value-3]','[value-4]','[value-5]','[value-6]')
