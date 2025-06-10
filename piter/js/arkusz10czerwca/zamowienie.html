@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="naglowkowy">
+        <h1>Fotografia artystyczna</h1>
+    </header>
+
+    <section class="obrazy">
+        <img src="gortat.jpg" alt="Marcin gortat" title="gortat">
+        <img src="lebron.jpg" alt="Lebron james" title="Lebron">
+         <img src="gortat.jpg" alt="Marcin gortat" title="gortat">
+        <img src="lebron.jpg" alt="Lebron james" title="Lebron">
+         <img src="gortat.jpg" alt="Marcin gortat" title="gortat">
+        <img src="lebron.jpg" alt="Lebron james" title="Lebron">
+         <img src="gortat.jpg" alt="Marcin gortat" title="gortat">
+        <img src="lebron.jpg" alt="Lebron james" title="Lebron">
+         <img src="gortat.jpg" alt="Marcin gortat" title="gortat">
+        <img src="lebron.jpg" alt="Lebron james" title="Lebron">
+
+    </section>
+
+    <main class="glowny">
+        <aside class="lewy">
+            <h3>Zamówienie</h3>
+            <label for="plik">Wybierz obraz: </label>
+            
+            <input type="file" name="plik" id="plik" accept="image/jpg, image/jpeg"><br>
+
+            <label for="kopie">Liczba kopii:  </label>
+            <input type="number" name="kopie" id="kopie"><br>
+
+            <input type="radio" name="radio" id="blyszczacy" checked>
+            <label for="blyszczacy">Papier blyszczacy</label><br>
+            
+            <input type="radio" name="radio" id="matowy">
+            <label for="matowy">Papier matowy</label><br>
+
+            <button onclick="dodaj()" >Dodaj do koszyka</button>
+
+        </aside>
+
+        <nav class="nawigacyjny">
+            <ul>
+                <li><a href="regulamin.html">Regulamin</a></li>
+                <li><a href="uslugi.html">Uslugi</a></li>
+                <li><a href="https://pl.pinterest.com/pin/celebrity-thanksgiving-inside-the-festive-weekend-of-your-favorite-stars--51087777003365555/">Zdjecia</a></li>
+            </ul>
+        </nav>
+
+        <section class="prawy" id="prawy">
+            <h3>Koszyk</h3>
+            <div id="blokSkryptu" class="blokSkryptu">
+                
+
+
+
+                
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="stopka">
+        <p>Autor strony <em>piotrek</em></p>
+    </footer>
+
+
+    <script>
+        let wyliczonaCena = 0;
+        const cenaBlyszczacy = 1.5;
+        const cenaMatowy = 2;
+        const blokSkryptu = document.getElementById("blokSkryptu");
+        function dodaj(){
+            let nazwaPliku = document.getElementById("plik").files[0].name;
+            let kopie = document.getElementById("kopie").value;
+            let matowy = document.getElementById("matowy");
+            let blyszczacy = document.getElementById("blyszczacy");
+
+
+            let obraz = document.createElement("img");
+            obraz.src=nazwaPliku;
+
+            let paragrafKopie = document.createElement("p");
+            paragrafKopie.classList = 'kopie';
+            paragrafKopie.innerHTML = `liczba kopi: ${kopie} `;
+
+
+
+            let paragrafCena = document.createElement("p");
+
+            if(blyszczacy.checked){
+                wyliczonaCena = cenaBlyszczacy;
+            }
+            else{
+                wyliczonaCena = cenaMatowy;
+            }
+
+            paragrafCena.innerHTML = `cena: ${wyliczonaCena} `;
+
+            blokSkryptu.appendChild(obraz);
+            blokSkryptu.appendChild(paragrafKopie);
+            blokSkryptu.appendChild(paragrafCena);
+            
+
+            
+
+        }
+    </script>
+    
+</body>
+</html>

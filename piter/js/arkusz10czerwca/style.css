@@ -1,0 +1,92 @@
+*{
+    font-family: Century Gothic, Arial;
+
+}
+
+body{
+    background-color: blanchedalmond;
+
+}
+
+.naglowkowy, .stopka{
+    background-color: sienna;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 130%;
+}
+body{
+    margin: 0;
+}
+.lewy{
+    background-color: navajowhite;
+    margin: 10px;
+    padding: 20px;
+    width: 35%;
+    height: 400px;
+    box-shadow: 5px 5px 10px dimgray;
+    float: left;
+}
+
+.nawigacyjny{
+    width: 50%;
+    text-align: center;
+    height: 50px;
+    margin-left: 39%;
+}
+
+.prawy{
+    width: 50%;
+    height: 420px;
+    overflow: auto;
+    float: left;
+    margin-top: 40px;
+    text-align: center;
+}
+input, button{
+    margin-top: 20px;
+}
+
+li{
+    display: inline-block;
+    
+}
+
+img{
+    width: 10%;
+    float: left;
+}
+
+a{
+    background-color: sienna;
+    margin-right: 30px;
+}
+
+a:hover{
+    color: #4C1900;
+}
+
+.stopka{
+    float: left;
+    width: 100%;
+    clear: both;
+}
+
+
+.blokSkryptu{
+    float: right;
+    text-align: left;
+}
+
+.blokSkryptu img{
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+
+.kopie{
+    float: left;
+}
+
+
+
