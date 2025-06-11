@@ -1,0 +1,5 @@
+1. SELECT MIN(`priorytet`) FROM notatki INNER JOIN osoby ON notatki.Osoby_Id = osoby.Id WHERE osoby.Id=3;
+2. SELECT `nazwa`, `priorytet` FROM notatki WHERE nazwa LIKE '%na%';
+3. SELECT `Imie`, notatki.nazwa FROM `osoby` inner join notatki ON osoby.id = notatki.Osoby_Id WHERE notatki.priorytet=5;
+4. SELECT osoby.Imie, COUNT(notatki.Id) FROM notatki INNER JOIN osoby ON osoby.Id = notatki.Osoby_Id GROUP BY osoby.Imie;
+
