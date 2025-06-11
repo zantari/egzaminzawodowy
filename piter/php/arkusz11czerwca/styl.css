@@ -1,0 +1,57 @@
+*{
+    font-family: Cambria;
+}
+
+body{
+    background-color: MistyRose;
+    margin: 0;
+}
+
+.naglowkowy, .stopka{
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.sekcja{
+    background-color: plum;
+    height: 400px;
+    margin: 5px;
+    box-shadow: 4px 4px 10px DimGray;
+    overflow: hidden;
+}
+
+
+@media (max-width: 800px) {
+    .sekcja{
+        width: 100%;
+    }
+
+    
+}
+
+@media (min-width: 800px){
+    .sekcja{
+        width: 22%;
+        float: left;
+    }
+}
+
+h2{
+    text-align: center;
+
+}
+
+button:hover{
+    background-color: #505050;
+    color: white;
+}
+
+.stopka{
+    width: 100%;
+}
+
+img{
+    margin: 0;
+}
